@@ -9,7 +9,7 @@ describe('Pizza Order App', () => {
     const olivesCheck = () => cy.get('#olives')
     const ricottaCheck = () => cy.get('#ricotta')
     const jalapenosCheck = () => cy.get('#jalapenos')
-    const specialInput = () => cy.get('#special-text')
+    const specialInput = () => cy.get('input[name=special]')
     const submitButton = () => cy.get('#order-button')
 
     it('Checking that all elements exist', () => {
@@ -73,7 +73,7 @@ describe('Pizza Order App', () => {
         jalapenosCheck()
             .check()
         specialInput()
-            .type('Add a salad')
+            .type('a')
         submitButton().click()
 
         nameInput()
@@ -93,4 +93,5 @@ describe('Pizza Order App', () => {
         submitButton()
             .should('be.disabled')
     })
+    
 })

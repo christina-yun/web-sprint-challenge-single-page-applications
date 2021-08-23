@@ -33,17 +33,17 @@ const App = () => {
   const [disabled, setDisabled] = useState(initialDisabled);
 
   //grabbing orders from the API
-  const getOrders = () => {
-    axios.get('https://reqres.in/api/orders')
-    .then(res => {
-      console.log(res.data)
-      setOrder(res.data)
+  // const getOrders = () => {
+  //   axios.get('https://reqres.in/api/orders')
+  //   .then(res => {
+  //     console.log(res.data)
+  //     setOrder(res.data)
       
-    })
-    .catch(err => {
-      console.error(err);
-    })
-  }
+  //   })
+  //   .catch(err => {
+  //     console.error(err);
+  //   })
+  // }
 
   //posting order information
   const postNewOrder = newOrder =>{

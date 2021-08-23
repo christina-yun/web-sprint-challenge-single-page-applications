@@ -93,7 +93,7 @@ function OrderForm(props){
                         id='special-text'
                         type='text'
                         name='special'
-                        checked={values.special}
+                        value={values.special}
                         onChange={onChange}
                         />
                     </label> 
